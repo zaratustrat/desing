@@ -1,0 +1,140 @@
+.header
+  background: url('../img/header/bg+man.png')no-repeat center
+  background-size: cover
+  padding: 29px 0 200px 
+  position: relative 
+  &:before 
+    content: ''
+    background: url('../img/header/background-dop.png')no-repeat
+    position: absolute 
+    width: 100% 
+    height: 100% 
+    top: 138px
+    left: 0px 
+    z-index: 1      
+  &-menu 
+    display: flex
+    justify-content: space-between 
+    align-items: center
+    margin-bottom: 228px
+  .menu-link 
+    display: none
+
+  &-menu__text 
+    width: 279px
+    font-size: 16px
+    ul 
+      display: flex 
+      justify-content: space-between 
+      a:hover 
+        color: #fc557c 
+        border-bottom: 1px solid #fc557c 
+  &-menu__contacts
+    max-width: 456px
+    width: 100%
+    display: flex
+    justify-content: space-between 
+    align-items: center
+  &-phone
+    font-size: 25px
+    font-weight: bold
+    
+  &-common 
+    display: flex 
+    justify-content: space-between
+    
+  h1 
+    font-size: 80px 
+    font-weight: bold 
+    margin: 0 0 22px
+  span 
+    display: block
+    font-size: 24px 
+    color: $text-pepel
+    font-weight: 100
+    margin-bottom: 46px 
+  .button-callback 
+    width: 207px
+    height: 45px 
+  .icon-callback 
+    display: none
+    opacity: 1
+    width: 26px
+    height: 26px 
+    border-radius: 50% 
+    border: none 
+    outline: none
+    background: transparent
+    &:hover 
+      cursor: pointer 
+      opacity: 0.5
+     
+      
+        
+  .button-hd 
+    position: absolute 
+    z-index: 2
+@media (max-width: 1199px)
+  .container
+    width: 941px
+    .header
+      &-menu__text  
+        display: none 
+    .menu-link 
+        display: block  
+@media (max-width: 992px) 
+  .container
+    width: 767px
+    .header
+      &-title 
+        h1 
+          font-size: 50px
+@media (max-width: 768px)
+  .container
+    width: 576px
+  .header
+      &:before 
+        height: 70%
+        background-size: contain
+      &-common 
+        justify-content: center 
+      &-menu
+        margin-bottom: 100px 
+      &-menu__contacts 
+        width: auto
+      &-phone 
+        font-size: 18px  
+      
+      &-title 
+        text-align: center
+        h1 
+          font-size: 45px
+        span
+          font-size: 18px
+      .button-callback 
+        display: none 
+      .icon-callback
+        display: block
+      .button-hd 
+        position: relative
+      .icon-header 
+        width: 24px        
+
+@media(max-width: 577px)
+  .container
+    width: 95%  
+    .header
+      padding: 30px 0 30px
+      &-title 
+        h1 
+          font-size: 30px
+      &-menu 
+        justify-content: space-around    
+      &-menu__contacts 
+        flex-direction: column  
+      &-phone  
+        display: block  
+       
+    
+
+

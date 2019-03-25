@@ -1,0 +1,59 @@
+.work 
+ padding: 99px 0 103px
+ &-subtitle
+  margin-bottom: 93px 
+ &-common 
+  display: flex 
+  justify-content: space-between
+  flex-wrap: wrap
+ &-img__text 
+  max-width: 22%
+  flex-direction: column
+  display: flex
+  align-items: center 
+  text-align: center
+ &-img 
+  margin-bottom: 24px 
+ &__text 
+  font-size: 20px 
+  color: $text-pepel 
+  margin-bottom: 95px  
+ &-button-bg 
+  display: block 
+  margin: auto 
+
+@media (max-width: 1199px)
+  .container
+    width: 941px
+    .work
+     &-img__text 
+       max-width: 48%
+
+@media (max-width: 992px) 
+  .container
+    width: 767px
+@media (max-width: 768px)
+  .container
+    width: 576px
+    .work
+     &-img__text 
+       max-width: 100% 
+     &__text 
+      width: 70%  
+
+@media(max-width: 577px)
+  .container
+    width: 95%  
+  .work 
+     padding: 30px 0 30px
+     &-subtitle 
+      font-size: 40px
+      margin-bottom: 30px
+     &-common
+      flex-direction: column
+     &__text 
+      margin-bottom: 20px  
+     
+        
+     
+
