@@ -1,17 +1,17 @@
 .header
-  background: url('../img/header/bg+man.png')no-repeat center
+  background: url('../img/header/bg+man.png')no-repeat center 
   background-size: cover
-  padding: 29px 0 200px 
-  position: relative 
-  &:before 
+  padding: 29px 0 237px 
+  position: relative
+  &:after 
     content: ''
     background: url('../img/header/background-dop.png')no-repeat
     position: absolute 
-    width: 100% 
+    width: 65% 
     height: 100% 
     top: 138px
-    left: 0px 
-    z-index: 1      
+    left: 130px 
+    z-index: 1     
   &-menu 
     display: flex
     justify-content: space-between 
@@ -52,7 +52,9 @@
     font-size: 24px 
     color: $text-pepel
     font-weight: 100
-    margin-bottom: 46px 
+    margin-bottom: 46px  
+  &-background 
+    display: none  
   .button-callback 
     width: 207px
     height: 45px 
@@ -68,49 +70,80 @@
     &:hover 
       cursor: pointer 
       opacity: 0.5
-     
-      
-        
   .button-hd 
     position: absolute 
     z-index: 2
-@media (max-width: 1199px)
+@media (max-width: 1024px)
+  .header
+      background: url('../img/header/man1024.png')no-repeat center 
+      background-size: cover 
+      &:after 
+        content: ''
+        background: url('../img/header/tlement1024.png')no-repeat
+        position: absolute
+        width: 90% 
+        height: 100% 
+        top: 138px
+        left: 80px 
+        z-index: 1 
   .container
     width: 941px
-    .header
+  .header
       &-menu__text  
-        display: none 
-    .menu-link 
-        display: block  
-@media (max-width: 992px) 
+          display: none
+      h1 
+          font-size: 54px 
+      span
+          font-size: 24px      
+      .menu-link 
+          display: block
+
+
+@media (max-width: 992px)
+  .header 
+    &:after 
+      width: 83%
+      background-size: 96% 
   .container
     width: 767px
-    .header
-      &-title 
-        h1 
-          font-size: 50px
 @media (max-width: 768px)
+  .header 
+      background: #FBFBFB url('../img/header/ellips1024.png')no-repeat center 
+      background-size: contain 
+      padding: 29px 0 0
+      &:after
+        height: 50% 
+        width: 75%
+        background-size: 95%
+      
   .container
     width: 576px
   .header
-      &:before 
-        height: 70%
-        background-size: contain
       &-common 
         justify-content: center 
       &-menu
-        margin-bottom: 100px 
+        margin-bottom: 50px 
       &-menu__contacts 
         width: auto
       &-phone 
-        font-size: 18px  
-      
+        font-size: 18px
+      &-common 
+        flex-direction: column-reverse    
+        align-items: center
       &-title 
         text-align: center
         h1 
           font-size: 45px
         span
           font-size: 18px
+      &-background 
+        display: flex
+        align-items: center
+        justify-content: center 
+        margin-bottom: 20px
+        z-index: 2
+      &-img 
+        width: 70%        
       .button-callback 
         display: none 
       .icon-callback
@@ -129,7 +162,7 @@
         h1 
           font-size: 30px
       &-menu 
-        justify-content: space-around    
+        margin-bottom: 100px  
       &-menu__contacts 
         flex-direction: column  
       &-phone  
