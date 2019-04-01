@@ -33,17 +33,17 @@ $('.main-slider').slick({
 });
 $(document).ready(function () {
   var link = $('.menu-link');
-  var link_active = $('.header-menu__text');
+  var link_active = $('.menu-link_active');
   var menu = $('.header');
 
   link.click(function () {
-    link.toggleClass('header-menu__text');
+    link.toggleClass('menu-link_active');
     menu.toggleClass('menu_active');
   });
   link_active.click(function () {
-    link.removeClass('header-menu__text');
+    link.removeClass('menu-link_active');
   });
-});    
+});  
 // $(document).ready(function () {
 //   $(".phone").mask("+380 (999) 99-99-999");
 // }); 

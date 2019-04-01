@@ -16,7 +16,7 @@
     display: flex
     justify-content: space-between 
     align-items: center
-    margin-bottom: 228px
+    margin-bottom: 228px 
   .menu-link 
     display: none
 
@@ -28,7 +28,10 @@
       justify-content: space-between 
       a:hover 
         color: #fc557c 
-        border-bottom: 1px solid #fc557c 
+        border-bottom: 1px solid #fc557c
+    .menu_active 
+      left: 0
+
   &-menu__contacts
     max-width: 456px
     width: 100%
@@ -89,6 +92,12 @@
   .container
     width: 941px
   .header
+      .menu_activ
+        display: block
+        width: 100% 
+        height: 300px 
+        background: black 
+        z-index: 99
       &-menu__text  
           display: none
       h1 
@@ -96,11 +105,15 @@
       span
           font-size: 24px      
       .menu-link 
-          display: block
+           display: block
 
 
 @media (max-width: 992px)
   .header 
+    .menu-active
+      width: 100% 
+      height: 300px
+      background: black
     &:after 
       width: 83%
       background-size: 96% 
@@ -162,7 +175,7 @@
         h1 
           font-size: 30px
       &-menu 
-        margin-bottom: 100px  
+        margin-bottom: 30px  
       &-menu__contacts 
         flex-direction: column  
       &-phone  

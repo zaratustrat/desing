@@ -6,6 +6,8 @@
 @import 'header'
 @import 'main'
 @import 'work'
+@import 'section'
+@import 'footer'
   
 
 *, *:after, *:before 
@@ -27,6 +29,12 @@ a
   color: $text-color
   text-decoration: none    
 @import 'media' 
+
+@media(max-width: 577px)
+  .container
+    width: 95%  
+    .subtitle-h2 
+      font-size: 30px
  
       
  

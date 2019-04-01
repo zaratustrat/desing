@@ -1,0 +1,67 @@
+.section 
+  background: url('../img/section/bg.png')no-repeat  center
+  width: 100%
+  padding: 84px 0
+  position: relative
+  &:before 
+    content: ''
+    background: url('../img/section/dop-bg.png')no-repeat 
+    position: absolute 
+    width: 89% 
+    height: 70% 
+    top: 65px 
+    left: 128px
+    background-size: 100%
+  &-wrap
+    margin: auto
+    width: 78%
+    color: white 
+  &-subtitle 
+    max-width: 905px  
+    font-size: 45px
+    margin-bottom: 40px
+  .small-text 
+    max-width: 767px 
+    font-size: 18px 
+    line-height: 28px
+  span 
+    margin-left: 14px 
+
+@media (max-width: 1199px) 
+  .section 
+    &:before
+      top: 85px
+      left: 100px
+      width: 86%
+  .container
+    .section 
+      &-subtitle 
+        font-size: 30px
+    width: 941px
+@media (max-width: 992px)
+  .section
+    padding: 50px 0 
+    &:before 
+      height: 50%
+      top: 123px
+      left: 50px
+      width: 86% 
+  .container
+    width: 767px
+@media (max-width: 768px)
+  .section 
+    &:before 
+      top: 134px
+      left: 30px
+      width: 88%
+  .container
+    width: 576px
+@media(max-width: 577px)
+  .section 
+    padding: 30px 0
+  .container
+    width: 95%  
+    .section 
+      &-subtitle 
+        font-size: 20px
+        margin-bottom: 20px     
